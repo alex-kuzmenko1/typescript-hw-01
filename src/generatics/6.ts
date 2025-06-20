@@ -14,3 +14,14 @@ type Form = {
 };
 
 type Params = Omit<Form, 'errors'>;
+
+const exampleParams: Params = {
+  email: 'test@mail.com',
+  firstName: 'John',
+  lastName: 'Doe',
+  phone: '123456789',
+};
+
+console.log(exampleParams);
+
+export {};

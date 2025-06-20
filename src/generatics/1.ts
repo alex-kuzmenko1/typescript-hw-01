@@ -8,3 +8,8 @@ async function fetchData<T>(url: string): Promise<T> {
     throw new Error(`Error fetching from ${url}: ${error}`);
   }
 }
+fetchData<{ name: string }>('https://jsonplaceholder.typicode.com/users/1')
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+
+export { fetchData };

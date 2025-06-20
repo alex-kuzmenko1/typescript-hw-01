@@ -5,3 +5,7 @@ const empty: null = null;
 const callback = (a: number): number => {
   return 100 + a;
 };
+
+console.log(age, username, toggle, empty, callback(10));
+
+export {};

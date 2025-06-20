@@ -13,3 +13,12 @@ function compare<T extends Pick<AllType, 'name' | 'color'>, U extends Pick<AllTy
     weight: bottom.weight,
   };
 }
+
+
+const topObj = { name: 'A', color: 'red' };
+const bottomObj = { position: 1, weight: 10 };
+
+const result = compare(topObj, bottomObj);
+console.log(result);
+
+export {};

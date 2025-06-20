@@ -9,3 +9,9 @@ function calc(num1: number, num2: number): number {
 function customError(): never {
   throw new Error('Error');
 }
+
+
+showMessage('Hello');
+console.log(calc(5, 3));
+
+export {};
